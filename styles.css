@@ -19,20 +19,102 @@
 
 
 header{
-border:2px solid red;
-background-color: aqua;
+background-color: #ffffff;
 grid-area: header;
 }
 
 
 main{
     grid-area: main;
-    border:2px solid rgb(45, 164, 223);
+    background-color: #ffe4e6;
 }
 
 .sidebar
 {
     
     grid-area: sidebar;
-    background-color: rgb(66, 60, 231);
+    background-color: #831843;
+    display: grid;
+    grid-template-rows:  repeat(11, 45px) min-content;
+    grid-template-areas: 
+                        "h3"
+                        "p1"
+                         "p2"
+                         "p3"
+                         "p4"
+                         "p5"
+                         "p6"
+                         "p7"
+                         "p8"
+                         "p9"
+                         "p10";
+   color: #ffffff; 
+
 }
+
+
+
+.sidebar > h3
+{
+    margin-top: 2rem;
+    grid-area: h3;
+    font-size: 1.3rem;
+}
+
+.sidebar p
+{
+    font-size:1.16rem;
+}
+.sidebar > p:first-child
+{
+grid-area: p1;
+}
+.sidebar > p:nth-child(2)
+{
+grid-area: p2;
+}
+.sidebar > p:nth-child(3)
+{
+grid-area: p3;
+}
+
+.sidebar > p:nth-child(4)
+{
+grid-area: p4;
+}
+.sidebar > p:nth-child(5)
+{
+grid-area: p5;
+}
+.sidebar > p:nth-child(6)
+{
+grid-area: p6;
+}
+
+.sidebar > p:nth-child(7)
+{
+
+grid-area: p7;
+}
+
+.sidebar > p:nth-child(8)
+{
+
+grid-area: p8;
+grid-row: 10/11;
+}
+
+.sidebar > p:nth-child(9)
+{
+
+grid-area: p9;
+grid-row: 11/12;
+}
+
+.sidebar > p:nth-child(10)
+{
+grid-area: p10;
+grid-row: 12/13;
+}
+
+
