@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     height:100%;
+    
+
 }
 
 .wrapper{
@@ -13,7 +15,7 @@
     grid-template-rows: 1fr 4fr min-content;
     grid-template-areas: 
     "sidebar header"
-    "sidebar main"
+    "sidebar main";
    
 }
 
@@ -33,14 +35,127 @@ main{
     grid-template-areas: "div1 div2" 
                          "div3 div4"
                          "div5 div6";
-    column-gap:50px;
+    column-gap:120px;
     row-gap:20px;
+    box-sizing:border-box;
 }
 
-main > .one,.two,.three,.four,.five,.six,.seven,.eight,.nine{
+main >.three,.six,.nine{
     border: 2px solid red;
+   
+    font-size:0.5rem;
 }
 
+.one
+{
+    display: flex;
+    grid-area:div1;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 50px;
+    margin-top:40px;
+    color:rgb(23, 7, 75);
+    background-color: #f6e6ec;
+    border-radius: 5%;
+    max-height:130px;
+
+}
+
+h4{
+    font-size:1.07rem;
+}
+
+.two
+{
+    margin-top:40px;
+    display: flex;
+    grid-area: div2;
+    flex-direction: column;
+    text-align: left;
+    color:rgb(23, 7, 75);
+    background-color: #f6e6ec;
+     border-radius: 5%;
+    max-height:130px;
+
+}
+
+.three{
+    margin-top:40px;
+
+}
+
+.four
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top:40px;
+    color:rgb(23, 7, 75);
+    grid-area: div4;
+    background-color: #f6e6ec;
+    border-radius: 5%;
+    max-height:120px;
+}
+
+
+.five{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top:40px;
+    margin-left:50px;
+    color:rgb(23, 7, 75);
+    grid-area: div3;
+    background-color: #f6e6ec;
+    border-radius: 5%;
+    max-height:120px;
+
+}
+
+
+.eight{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top:40px;
+    color:rgb(23, 7, 75);
+    grid-area: div6;
+    background-color: #f6e6ec;
+    border-radius: 5%;
+    max-height:120px;
+
+}
+
+
+.seven{
+    
+    grid-area: div5;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1rem; 
+    margin-top: 40px; 
+    margin-left: 50px;
+    color:rgb(23, 7, 75);
+    background-color: #f6e6ec;
+    border-radius: 5%;
+    max-height:120px;
+}
+    
+
+
+
+
+a{
+    color:rgb(23, 7, 75);
+    margin-top:10px;
+    text-decoration: none;
+    font-size:1.07rem;
+}
+a:hover
+{
+    color:#831843;
+}
 .sidebar
 {
     
