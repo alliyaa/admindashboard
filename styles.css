@@ -31,20 +31,43 @@ main{
     background-color: #ffe4e6;
     display: grid;
     grid-template-columns: repeat(2,2fr) repeat(1,1.5fr);
-    grid-template-rows: repeat(3,1fr) min-content;
-    grid-template-areas: "div1 div2" 
-                         "div3 div4"
-                         "div5 div6";
+    grid-template-rows: repeat(6,1fr)  min-content;
+    grid-template-areas: "div1 div2 div11" 
+                         "div1 div2 div11" 
+                         "div3 div4 div11 "
+                         "div3 div4 div12 "
+                         "div5 div6 div12"
+                         "div5 div6 div12";
     column-gap:120px;
     row-gap:20px;
     box-sizing:border-box;
 }
 
-main >.three,.six,.nine{
-    border: 2px solid red;
-   
-    font-size:0.5rem;
+.announcements {
+    grid-area: div11;
+    margin-right:50px;
+    border: 2px solid rgb(87, 29, 212);
+
 }
+
+.trending
+{   margin-right:50px;
+    grid-area:div12;
+    border: 2px solid rgb(198, 171, 255);
+
+}
+
+.announcements > h4
+{
+    margin-top:1rem;
+
+}
+
+.trending > h4
+{
+    margin-top:1rem;
+}
+
 
 .one
 {
