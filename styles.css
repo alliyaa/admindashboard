@@ -24,10 +24,10 @@ header{
 background-color: #ffffff;
 grid-area: header;
 display:grid;
-grid-template-columns: repeat(1, 0.5fr) repeat(3,1fr);
+grid-template-columns: repeat(1, 0.5fr) repeat(5,1fr);
 grid-template-rows: repeat(2,1fr) min-content;
-grid-template-areas: " . search search notifs"
-                     " .  user user buttons";
+grid-template-areas: " . search search notifs notifs notifs"
+                     " .  user user user buttons buttons";
 }
 
 .search{
@@ -38,7 +38,6 @@ grid-template-areas: " . search search notifs"
     border-radius: 1rem;
     max-width:500px;
     max-height: 30px;
- 
 
 }
 
@@ -48,11 +47,35 @@ border-radius: 30px;
 
 .user
 {   display: flex;   
-     margin-top: 0.7rem;
+    margin-top: 0.7rem;
     grid-area: user;
     max-width:500px;
     max-height: 30px;
     gap: 15px;
+}
+
+.buttons
+{
+    display: flex;   
+    margin-top: 0.7rem;
+    grid-area: buttons;
+    gap: 40px;
+    margin-bottom: 25px;
+  
+
+}
+
+button
+{
+    font-size: 1rem;
+    border:none;
+    color:#831843;
+    width:88px;
+    background-color: #ffd3e3;
+    border-radius: 1.5rem;
+    max-height: 40px;
+    margin-bottom: 10px;
+  
 }
 
 
