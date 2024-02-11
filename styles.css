@@ -69,6 +69,7 @@ border-radius: 30px;
 .notifs > h4 
 {
     margin-top:5px;
+    background-color: #ffffff;
 }
 
 .notifs > img
@@ -108,10 +109,10 @@ main{
     display: grid;
     grid-template-columns: repeat(2,2fr) repeat(1,1.5fr);
     grid-template-rows: repeat(6,1fr)  min-content;
-    grid-template-areas: "div1 div2 div11" 
-                         "div1 div2 div11" 
-                         "div3 div4 div11 "
-                         "div3 div4 div12 "
+    grid-template-areas: "div1 div2  div11" 
+                         "div1 div2  div11" 
+                         "div3 div4  div11 "
+                         "div3 div4  div12 "
                          "div5 div6 div12"
                          "div5 div6 div12";
     column-gap:120px;
@@ -132,6 +133,23 @@ main{
 
 }
 
+.announcements > p{
+    padding-top: 1rem;
+}
+
+
+.trending > p{
+    padding-top: 1rem;
+}
+
+p{
+    padding-top: 1rem; 
+}
+
+h4{
+    background-color: #ffe4e6;
+    font-size:1.07rem;
+}
 .trending
 {  
     margin-top:30px;
@@ -165,9 +183,7 @@ main{
 
 }
 
-h4{
-    font-size:1.07rem;
-}
+
 
 .two
 {
